@@ -15,12 +15,12 @@ import java.util.List;
 public interface VideoGameDao {
 
     //Allow us to get all video game
-    @Query("SELECT * FROM videogame")
+    @Query("SELECT * FROM gamemodel")
     List<GameModel> getVideoGames();
 
     // allows us to get a single game to the list
     @Insert
-    void addVideoGame(GameModel gameModel);
+    void addVideoGame(GameModel gameMode);
 
     //Allows us to update the values of an existing game
     @Update
